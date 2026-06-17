@@ -1,4 +1,8 @@
-import type { Variants, Transition } from "framer-motion";
+// Local type aliases so this module doesn't depend on framer-motion's types.
+// Replace with `import type { Variants, Transition } from "framer-motion"`
+// if/when framer-motion is added as a dependency.
+type Transition = Record<string, unknown>;
+type Variants = Record<string, unknown>;
 
 export const EASE = [0.7, 0, 0.2, 1] as const;
 export const EASE_OUT = [0.16, 1, 0.3, 1] as const;
